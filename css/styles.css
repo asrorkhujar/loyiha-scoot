@@ -133,6 +133,10 @@ img {
   font-family: "Space Mono";
   font-weight: bold;
   color: var(--dim-grey);
+  transition: color 0.3s ease;
+}
+.site__nav-link:hover{
+  color: var(--yellow);
 }
 .button {
   text-decoration: none;
@@ -142,14 +146,14 @@ img {
   color: var(--white);
   background-color: var(--yellow);
   padding: 14px 39px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   transition: color 0.3s ease,
   background-color 0.3s ease;
 }
 .button:hover{
   color: var(--yellow);
-  background-color: var(--white);
-  border: 1px solid var(--yellow);
+  background-color: transparent;
+  border: 3px solid var(--yellow);
 }
 
 /* HERO */
@@ -212,4 +216,60 @@ margin-bottom: 40px;
 }
 .hero__btn {
   margin-left: 95px;
+}
+
+/* FEATURES */
+.steps{
+padding: 160px 0;
+background-image: url(../img/grey-line.svg);
+background-size: 924px 15px;
+background-repeat: no-repeat;
+background-position: calc(50% - 250px) calc(50% - 100px);
+
+}
+.steps__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.steps__item {
+  width: 350px;
+}
+.steps__item:not(:last-child){
+  margin-right: 30px;
+}
+.steps__item::before{
+  content: "";
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/icon-calculator.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+
+.item-bike::before{
+  background-image: url(../img/icon-bike.svg);
+}
+.item-speedbike::before{
+  background-image: url(../img/icon-speed-bike.svg);
+}
+
+
+.steps__item-title {
+  margin: 0;
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+color: var(--dark-navy);
+margin-bottom: 27px;
+}
+.steps__item-desc {
+color: var(--dim-grey);
 }
