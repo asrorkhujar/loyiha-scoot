@@ -160,7 +160,7 @@ padding: 153px 0;
 background-image: url(../img/three-circle.svg), url(../img/hero-bg.jpg) ;
 background-repeat: no-repeat;
 background-size: 234px 63px, cover;
-background-position: calc(50% + 53%) 75%, center center;
+background-position: calc(50% + 693px) 415px, center center;
 }
 
 .hero__heading {
