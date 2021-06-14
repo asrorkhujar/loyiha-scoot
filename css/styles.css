@@ -164,7 +164,7 @@ padding: 153px 0;
 background-image: url(../img/three-circle.svg), url(../img/hero-bg.jpg) ;
 background-repeat: no-repeat;
 background-size: 234px 63px, cover;
-background-position: calc(50% + 693px) 415px, center center;
+background-position: calc(50% + 645px) 415px, center center;
 }
 
 .hero__heading {
@@ -220,11 +220,12 @@ margin-bottom: 40px;
 
 /* FEATURES */
 .steps{
-padding: 160px 0;
+padding-top: 160px;
+padding-bottom: 75px;
 background-image: url(../img/grey-line.svg);
 background-size: 924px 15px;
 background-repeat: no-repeat;
-background-position: calc(50% - 250px) calc(50% - 100px);
+background-position: calc(50% - 250px) calc(50% - 60px);
 
 }
 .steps__list {
@@ -259,7 +260,6 @@ background-position: calc(50% - 250px) calc(50% - 100px);
   background-image: url(../img/icon-speed-bike.svg);
 }
 
-
 .steps__item-title {
   margin: 0;
   font-family: "Space Mono";
@@ -272,4 +272,74 @@ margin-bottom: 27px;
 }
 .steps__item-desc {
 color: var(--dim-grey);
+}
+
+/* FEATURES */
+.features{
+  padding-top: 75px;
+  padding-bottom: 180px;
+}
+
+.features__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+.features__box:last-child{
+  margin-bottom: 0;
+}
+.features__box-inner {
+  width: 445px;
+}
+.features__title {
+  margin: 0;
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--dark-navy);
+  margin-bottom: 24px;
+}
+.features__desc {
+  color: var(--dim-grey);
+  margin-bottom: 40px;
+}
+
+.features__img-box {
+position: relative;
+z-index: 1;
+}
+
+.features__img-box::before{
+  content: "";
+  position: absolute;
+  left: -130px;
+  bottom: 0;
+  z-index: 10;
+  width: 735px;
+  height: 140px;
+  background-image: url(../img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  }
+
+  .features__img-box::after{
+    content: "";
+    position: absolute;
+    right:  -110%;
+    bottom: 0;
+    z-index: 1;
+    width: 445px;
+    height: 445px;
+    background-image: url(../img/grey-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+
+.features-location{
+  flex-direction: row-reverse;
 }
